@@ -1,3 +1,9 @@
+alert("Welcome click OK to start calculator")
+
+let fValue = Number(prompt("Enter FIrst Value:"));
+let sValue = Number(prompt("Enter Second Value:"));
+let op = prompt("Enter Operation ('+', '-', '*', '/'):");
+
 
 function calculator(a,b,operation){
     let result = 0;
@@ -17,8 +23,8 @@ function calculator(a,b,operation){
         result = "operation is invalid: please check your operation"
     }
 
-    return result;
+    return alert(result);
 }
 
 
-console.log(calculator(1,2,));
+calculator(fValue, sValue, op);
